@@ -1,0 +1,48 @@
+<div class="container-fluid" id="list">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="console-title clearfix">
+        <div class="pull-left">
+          <h5>申请列表<span class="moduletitle"></span></h5>
+        </div>
+        <div id="search" style="float:right;width:50%">
+        </div>
+      </div>
+
+      <div id="tearcherlist">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="test">
+
+</div>
+
+<div class="container-fluid" style="display:none" id="details">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="console-title clearfix">
+        <input type="hidden" id="detailsIdx"/>
+        <div id="tearcherDetails">
+        </div>
+        <div class="item form-group" style="margin:0 auto;width:40%">
+          <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-3">
+            <a id="through" href="#" class="btn btn-primary">审批通过</a>
+            <a id="notThrough" href="#" class="btn btn-success">审批不通过</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+{{#section 'appjs'}}
+<script src="/teacher/teacherlist/bundle.js"></script> 
+{{/section}}
+
+
+{{#section 'appcss'}}
+<link rel="stylesheet" href="/teacher/teacherlist/bundle.css"> 
+{{/section}}

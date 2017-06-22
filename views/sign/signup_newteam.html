@@ -1,0 +1,47 @@
+<form id='formSignup' class="form-signup" action='/signup/team' method='post'>
+    {{#if error}}
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{error}}
+    </div>
+    {{/if}}
+
+    <div id='errplaceholder'></div>
+
+
+    <h2 class="form-signin-heading row">新用户注册 - 企业或团队</h2>
+
+
+    {{#if companies}}
+    <div class="form-group row">
+        <input type="radio" name="choice" value="join" checked>
+        该邮箱域名已绑定如下企业或团队, 您可以选择加入:
+    </div>
+    <div class="form-group row">
+        <select class='form-control input-sm' name='selcom' id='selcom'>
+        {{#each companies}}
+        <option value='{{_id}}' fr='{{freedom_register}}'>{{name}}</option>
+        {{/each}}
+        </select>
+    </div>
+
+    <div class="form-group row">
+        <input type="radio" name="choice" value="create">
+        您也可以新建企业或团队:
+    </div>
+    {{/if}}
+
+    <div class="form-group row">
+        <input id="teamname" name="teamname" type="text" placeholder="企业或团队名称" class="form-control" autofocus="">
+    </div>
+
+    <div class="form-group row">
+        <button class="btn btn-primary btn-sm col-md-4" type="button" id="btnPre">上一步</button>
+        <button class="btn btn-primary btn-sm col-md-4 col-md-offset-4" type="button" id="btnNext">下一步</button>
+    </div>
+</form>
+
+{{#section 'appjs'}}
+    <script src="/script/sign/signup_newteam.js"></script>
+{{/section}}
+

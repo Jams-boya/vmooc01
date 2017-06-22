@@ -1,0 +1,90 @@
+.mytable-container {
+    position: relative;
+}
+
+.mytable-container .table-container{
+    /*height: 200px;*/
+    /*overflow-x: auto;*/
+    /*overflow-y: auto;*/
+    /*border: 1px solid #E6E2EB;*/
+    /*border: 1px solid #AAA;*/
+}
+
+.table-container-parent {
+    margin-top: -20px;
+}
+
+.mytable-container table {
+    table-layout: fixed;
+}
+
+.mytable-container .table-container table{
+    margin-top: -19px;
+    border-top: medium none;
+}
+
+.mytable-container .sort-column {
+    cursor: pointer;
+}
+
+.mytable-download {
+    position: absolute;
+    right: 3px;
+    top: 9px;
+    cursor: pointer;
+}
+
+.mytable-container .table-header>.table>thead>tr>th {
+  border: 0px;
+}
+
+.mytable-container .table-header>.table {
+  margin-bottom: 0px;
+}
+
+.mytable-pagination {
+  right: 0;
+  top: 10%;
+  float: right;
+}
+
+.mytable-pagination .gopage {
+  width : 28px;
+  height: 20px;
+}
+
+.mytable-pagination .gopage:hover,
+.pagination li a:hover input {
+  color:#333;
+} 
+
+.mytable-toolbar {
+  left: 0;
+  top: 10%;
+  float: left;
+}
+
+.mytable-toolbar>li{
+  margin-right: 2px;
+}
+
+.mytable-toolbar>li>select{
+  display: inline;
+  width: auto;
+}
+
+.mytable-menu-drop {
+  height: 12px;  
+  float: left;
+  padding: 0px;
+  margin-top: -3px;
+}
+
+.mytable-operate-td a {
+  margin-right: 3px;
+}
+
+.mytable-container td {
+  word-break: break-all;
+}
+

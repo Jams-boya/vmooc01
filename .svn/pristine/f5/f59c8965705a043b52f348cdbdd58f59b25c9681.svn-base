@@ -1,0 +1,491 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.clear {
+  clear: both;
+}
+.play{
+  width:20%;
+  height:100%;
+  float: right;
+}
+.play .playhead{
+  width: 100%;
+  margin-bottom: 15px;
+}
+.play .playhead .hleft{
+  width: calc(100% - 140px);
+  width: -webkit-calc(100% - 140px);
+  width: -moz-calc(100% - 140px);
+  width: -ms-calc(100% - 140px);
+  width: -o-calc(100% - 140px);
+  padding-top:20px;
+  padding-left:26px;
+  float: left;
+  height: 70px;
+}
+
+.play .playhead .hleft .title{
+  display:block;
+  font-size:14px;
+  font-family: "Microsoft YaHei";
+  color:#000;
+  line-height: 24px;
+}
+
+.play .playhead .hleft .peek{
+  display:block;
+  font-size:14px;
+  font-family: "Microsoft YaHei";
+  padding-top:3px;
+  color:#999590;
+  line-height: 24px;
+}
+.play .playhead .hleft .peek #num{
+  color:#000;
+}
+.play .playhead .hright{
+  width: 114px;
+  margin-right:26px;
+  float:right;
+  margin-top: 20px;
+  height: 70px;
+  overflow: hidden;
+}
+.play .playhead .hright img{
+  width:100%;
+}
+/*菜单 问答-目录*/
+.play .menu{
+  font-family: 'Microsoft YaHei';
+  height:30px;
+  background-color:#F3F2F1;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.play .menu a{
+  color: #908D88;
+}
+.play .menu .interlocution a:link{
+  color: #908D88;
+  text-decoration:none;
+}
+.play .menu .interlocution a:hover{
+  color:#00872D;
+  text-decoration:none;
+}
+.play .menu .catalog a:active{
+  color:#00872D;
+  text-decoration:none;
+}
+.play .menu a{
+  color: #908D88;
+}
+.play .menu .catalog a:link{
+  color: #908D88;
+  text-decoration:none;
+}
+.play .menu .catalog a:hover{
+  color:#00872D;
+  text-decoration:none;
+}
+.play .menu .catalog a:active{
+  color:#00872D;
+  text-decoration:none;
+}
+.play .interlocution{
+  font-size:14px;
+  font-family:"Microsoft YaHei";
+  float: left;
+  width:40px;
+  margin-left:60px;
+}
+.play .catalog{
+  font-size:14px;
+  font-family:"Microsoft YaHei";
+  width:40px;
+  display: block;
+  float:right;
+  margin-right:60px;
+}
+.main{
+	width : 100%;
+  min-width: 265px;
+  height: 78%;
+}
+.play .character{
+  width:100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.play .character .chleft{
+  width:80px;
+  height: 80px;
+  margin-left: 26px;
+  float:left;
+  border-radius: 6px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.play .character .chleft img{
+  width: 100%;
+}
+.play .character .chright{
+  width:60%;
+  height:80px;
+  float:left;
+}
+.play .character .chright .chintro{
+}
+.play .character .chright .name{
+  display: block;
+  font-size:14px;
+  font-family:"Microsoft YaHei";
+  line-height: 15px;
+  margin-top: 10px;
+}
+.play .character .chright .job{
+  margin-top: 10px;
+  display: block;
+  font-size:13px;
+  font-family:"Microsoft YaHei";
+  color:#73716C;
+  line-height: 50px;
+}
+.play .character .declare{
+  display: block;
+  width: calc(100% - 52px);
+  width: -moz-calc(100% - 52px);
+  width: -webkit-calc(100% - 52px);
+  width: -ms-calc(100% - 52px);
+  width: -o-calc(100% - 52px);
+  margin-left: 26px;
+  margin-top:12px;
+  font-size:14px;
+  font-family:"Microsoft YaHei";
+  color:#94918C;
+  float: left;
+}
+.play .money{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.play .money .mbtn{
+  width:100px;
+  height:30px;
+  background-color:red;
+  font-size:15px;
+  line-height:30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-weight:normal;
+  border-color: red;
+}
+.play .payask{
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+  padding-bottom: 6px;
+}
+.play .payask .pa{
+  display:block;
+  font-size:16px;
+  font-family:"Microsoft YaHei";
+  color:#000;
+  float:left;
+  margin-left: 26px;
+}
+.play .payask .paright{
+  display:block;
+  font-size:13px;
+  font-family:"Microsoft YaHei";
+  color:#ADA9A4;
+  float:right;
+  cursor:pointer;
+  position: relative;
+}
+.play .payask .paright span {
+  margin-left: 11px;
+}
+.play .payask .paright .linespan
+{
+  font-size: 14px;
+  height: 12px;
+  position: absolute;
+  top: -2px;
+  right: 34px;
+}
+.play .question{
+  width:100%;
+  height:40%;
+  margin-top:6px;
+  overflow:auto;
+  overflow-x:hidden;
+  border-top:1px solid #E0DED9;
+  border-left-color: white;
+  border-right: 0;
+}
+.play .question .qblock{
+  height:140px;
+  border:1px solid #E0DED9;
+  border-left-color: white;
+  border-right: 0;
+  border-top: 0;
+}
+.play .question .qblock:last-child {
+	border-bottom: 0;
+}
+.play .qmain{
+  min-width: 360px;
+  padding-top:10px;
+  padding-left:7%;
+  padding-right:24px;
+}
+
+.qmain:hover {
+  background-color: #F2F2F2;
+}
+
+.play .qleft{
+  float:left;
+}
+
+.play .qleft img{
+  width:40px;
+  height:40px;
+  margin:auto;
+  background-color:black;
+}
+.play .qright{
+  width:calc(100% - 50px);
+  width:-webkit-calc(100% - 50px);
+  width:-moz-calc(100% - 50px);
+  width:-ms-calc(100% - 50px);
+  width:-o-calc(100% - 50px);
+  float:left;
+  margin-left:10px;
+}
+.play .qright .detail{
+  display:block;
+  font-size:14px;
+  font-family:"Microsoft YaHei";
+  word-break: break-all;
+  /* line-height:20px; */
+  letter-spacing:1px;
+}
+.play .qright .qpa{
+  font-size:13px;
+  font-family:"Microsoft YaHei";
+  color:#8C8984;
+}
+.play .qmain .qbuttom{
+  float: right;
+  text-align:right;
+  height:30px;
+  width:60px;
+  margin-left: 180px;
+  margin-top: 15px;
+}
+.play .qmain .qbuttom .qbtn{
+  width:60px;
+  height:20px;
+  font-size:13px;
+  line-height:20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-weight:normal;
+  border-color: #00A839;
+  background-color:#00A839;
+  margin-right: 12px;
+}
+
+.play .question::-webkit-scrollbar{width:2px;}
+.play .question::-webkit-scrollbar-track{background-color:#E0DED9;}
+.play .question::-webkit-scrollbar-thumb{background-color:#009A49;}
+.play .question::-webkit-scrollbar-thumb:hover {background-color:#009A49;}
+.play .question::-webkit-scrollbar-thumb:active {background-color:#009A49;}
+.play .question::-moz-scrollbar{width:2px;}
+.play .question::-moz-scrollbar-track{background-color:#E0DED9;}
+.play .question::-moz-scrollbar-thumb{background-color:#009A49;}
+.play .question::-moz-scrollbar-thumb:hover {background-color:#009A49;}
+.play .question::-moz-scrollbar-thumb:active {background-color:#009A49;}
+.play .question::-ms-scrollbar{width:2px;}
+.play .question::-ms-scrollbar-track{background-color:#E0DED9;}
+.play .question::-ms-scrollbar-thumb{background-color:#009A49;}
+.play .question::-ms-scrollbar-thumb:hover {background-color:#009A49;}
+.play .question::-ms-scrollbar-thumb:active {background-color:#009A49;}
+.play .question::scrollbar{width:2px;}
+.play .question::scrollbar-track{background-color:#E0DED9;}
+.play .question::scrollbar-thumb{background-color:#009A49;}
+.play .question::scrollbar-thumb:hover {background-color:#009A49;}
+.play .question::scrollbar-thumb:active {background-color:#009A49;}
+
+
+
+body
+{
+  font-size: none;
+}
+.play .main .catamain {
+  font-size: 14px;
+}
+/*目录*/
+.play .main .catamain .catatitle{
+	height:40px;
+	font-size:15px;
+	font-family:"Microsoft YaHei";
+	color:#000;
+	line-height: 40px;
+	margin-top:10px;
+  padding-left: 15px;
+}
+.play .main .catamain .lgchapter{
+	display:block;
+	float:left;
+}
+.play .main .catamain .smchapter{
+	display:block;
+	float:left;
+	margin-left: 16px;
+}
+.play .catacontent{
+  height:30px;
+  width: calc(100% - 26px);
+  width: -webkit-calc(100% - 26px);
+  width: -moz-calc(100% - 26px);
+  width: -ms-calc(100% - 26px);
+  width: -o-calc(100% - 26px);
+  line-height: 26px;
+  margin-left: 21px;
+  padding:3px 0px 3px 5px;
+  margin-top: 10px;
+}
+.play .catacontent a{
+  color:#A4A4A4;
+}
+.play .catatitle a{
+  color:#A4A4A4;
+}
+.play .catacontent a:hover{
+  text-decoration: none;
+}
+.play .catatitle a:hover{
+  text-decoration: none;
+}
+.play .main .catamain .circle{
+	text-align: center;
+	float:left;
+	color:#A4A4A4;
+	border:1px solid #A4A4A4; 
+  width:24px; 
+  height:24px; 
+  margin:0 auto;
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	-ms-border-radius:12px;
+	-o-border-radius:12px;
+	border-radius:12px;
+  font-size: 13px;
+  line-height: 24px;
+}
+.play .main .catamain .smtitle{
+	float:left;
+	margin-left: 30px;
+	vertical-align: middle;
+	color:#A4A4A4;
+  width: 68%;
+}
+.play .main .catamain .catacontent .playimg{
+	float:left;
+	margin-top: 7px;
+	color:#A4A4A4;
+  width:14px;
+}
+.play .main .catamain .catacontent .playtime{
+	float:left;
+	margin-left:10px;
+	vertical-align: middle;
+	color:#A4A4A4;
+  width: 30px;
+}
+.player
+{
+  position: relative;
+  min-width: 100%;
+}
+.playRight {
+  position: absolute;
+  width: 80%;
+  border-right: 1px solid grey;
+  float:left;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.select {
+  background: #e6e6e6;
+}
+
+
+
+
+#player_Content::-webkit-scrollbar{width:2px;}
+#player_Content::-webkit-scrollbar-track{background-color:#E0DED9;}
+#player_Content::-webkit-scrollbar-thumb{background-color:#009A49;}
+#player_Content::-webkit-scrollbar-thumb:hover {background-color:#009A49;}
+#player_Content::-webkit-scrollbar-thumb:active {background-color:#009A49;}
+#player_Content::-moz-scrollbar{width:2px;}
+#player_Content::-moz-scrollbar-track{background-color:#E0DED9;}
+#player_Content::-moz-scrollbar-thumb{background-color:#009A49;}
+#player_Content::-moz-scrollbar-thumb:hover {background-color:#009A49;}
+#player_Content::-moz-scrollbar-thumb:active {background-color:#009A49;}
+#player_Content::-ms-scrollbar{width:2px;}
+#player_Content::-ms-scrollbar-track{background-color:#E0DED9;}
+#player_Content::-ms-scrollbar-thumb{background-color:#009A49;}
+#player_Content::-ms-scrollbar-thumb:hover {background-color:#009A49;}
+#player_Content::-ms-scrollbar-thumb:active {background-color:#009A49;}
+#player_Content::scrollbar{width:2px;}
+#player_Content::scrollbar-track{background-color:#E0DED9;}
+#player_Content::scrollbar-thumb{background-color:#009A49;}
+#player_Content::scrollbar-thumb:hover {background-color:#009A49;}
+#player_Content::scrollbar-thumb:active {background-color:#009A49;}
+
+#player_Content {
+  padding-left: 0px;
+}
+
+.catmain {
+  padding-left:8px;
+}
+
+.paright button {
+  float:left;
+  margin-right: 3px;
+  border:0px;
+  background-color: white;
+}
+.linespan {
+  float:left;
+}
+#video_player {
+  float:right;
+}
+.btnDefault {
+  border: 0px;
+  background: #F2F2F2;
+  text-align: center;
+  height: 36px;
+}
+.btnDefault:hover {
+  border: 0px;
+  background: #F2F2F2;
+  color: #25AA1D;
+}
+.btnDefault:focus {
+  border: 0px;
+  background: #F2F2F2;
+  box-shadow: none;
+}

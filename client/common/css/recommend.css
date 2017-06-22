@@ -1,0 +1,73 @@
+.recommend {
+    width: 250px;
+    font-family: "Microsoft YaHei";
+    padding-bottom: 30px;
+}
+
+.recommend .rectitle {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.recommend .recul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recommend .recul li {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.recommend .recul li:hover {
+    border-right: 1px solid #32c388;
+}
+
+.recommend .recul li:first-child {
+    margin-top: 20px;
+}
+
+.recommend .recul .recimg {
+    width: 65px;
+    height: 65px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #F99F9F;
+    float: left;
+}
+
+.recommend .recul .recimg img {
+    width: 100%;
+    height: 100%
+}
+
+.recommend .recul .reccon {
+    float: left;
+    height: 65px;
+    width: 177px;
+    margin-left: 7px;
+    overflow: hidden;
+}
+
+.recommend .recul .reccon span {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.recommend .recul .reccon span:nth-child(1) {
+    font-size: 14px;
+}
+
+.recommend .recul .reccon span:nth-child(2) {
+    color: #6D6D6D;
+}
+
+.recommend .recul .reccon span:nth-child(3) a {
+    font-size: 13px;
+    color: #18A98F;
+    text-decoration: none;
+}

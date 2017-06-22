@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="load">
+    <span><a href="/personal?url=/personal" style="color:black;text-decoration:none;font-size:12px;">账号管理</a></span>&nbsp;>&nbsp;
+    <span><a href="/myaccount?url=/myaccount" pathname = '/myaccount' id = 'myaccount' style="color:#21BA10;text-decoration:none;font-size:12px;">账户资金</a></span>
+  </div>
+  <div class="pubmenu" style="float:left;width:13%;">
+    <!-- nav -->
+  </div>
+  <div class="con" style="margin-top:20px;">
+    <div class="contitle">
+      <span class="refer">账户资金</span>
+    </div>
+    <div style="clear: none;margin-bottom: 10px;"></div>
+  </div>
+  <div class="conbody" style=" width:85%;float:right;padding: 10px;border: 1px solid #DDDDDD">
+      <div class="row myaccount">
+        <div class="col-md-12">
+          <label>账户余额</label><span class='account_balance'>￥{{toFixed account.balance 2}}</span>
+          <span class="btn btn-default withdraw">提现</span>
+          <span class="myaccount_note">最低提现金额为50元</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id='laundrylist'></div>
+        </div>
+      </div>
+      <div id="withdraw"></div>
+
+  </div>
+</div>
+{{#section 'appjs'}}
+<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  document.getElementsByClassName('platform')[0].style.display = "none";
+  document.getElementsByClassName('change')[0].style.display = "none";
+  // $('.p_index_logo').attr('src', '/images/logo2.png');
+  var winPath   = window.location.pathname;
+  if(winPath == '/myaccount'){
+    $('#modifypwd').css("color","#21BA10");
+    $('#personal').css("color","#21BA10");
+  }
+</script>
+<script src="/account/myaccount/bundle.js"></script>
+{{/section}}
+{{#section 'appcss'}}
+<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/account/myaccount/bundle.css">
+{{/section}}
+

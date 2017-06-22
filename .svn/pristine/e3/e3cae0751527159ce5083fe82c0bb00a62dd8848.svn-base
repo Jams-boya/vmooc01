@@ -1,0 +1,436 @@
+body {
+	margin: 0;
+	font-family: "Microsoft YaHei";
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.special {
+	font-family: "Microsoft YaHei";
+	padding-bottom: 100px;
+}
+.special .topimg {
+	width: 100%;
+	margin: auto;
+	height: 360px;
+	background-repeat: no-repeat;
+	background-size: 1920px 360px;
+	background-position: center;
+	overflow: hidden;
+}
+.mid {
+	width: 1000px;
+	margin: auto;
+}	
+.special .infotop {
+	display: table;
+	margin: auto;
+}
+.special .topinfo {
+	width: 240px;
+	height: 200px;
+	margin: auto;
+	margin-top: 152px;
+}
+.special .topinfo .sp1 {
+	font-size: 30px;
+	font-weight: 600;
+	color: red;
+}
+.special .topinfo .sp2 {
+	font-size: 50px;
+	font-weight: 600;
+	color: red;
+}
+.special .topinfo .sp3 {
+	font-size: 16px;
+	display: table;
+	float: right;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.special .infomid {
+	display: table;
+	margin: auto;
+	position: relative;
+	margin-top: -5px;
+}
+.special .infomid .sp4 {
+	margin-left: 6px;
+	font-size: 23px;
+}
+.special .infomid .sp5 {
+	margin-right: 6px;
+	font-size: 21px;
+}
+.special .infomid .infoline {
+	width: 100%;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 52%;
+}
+.special .topbuy {
+	margin: auto;
+	margin-top: 20px;
+	width: 156px;
+	height: 50px;
+	line-height: 50px;
+	background: red;
+	text-align: center;
+	border-radius: 4px;
+	color: #FFFFFF;
+	font-size: 24px;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+.special .title {
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+}
+.special .title span {
+	position: absolute;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 86px;
+	line-height: 86px;
+	top: 0px;
+	font-size: 36px;
+}
+.special .expertsDom {
+	margin-top: 40px;
+	padding-bottom: 100px;
+	width: 1000px;
+}
+.special .expert {
+	position: relative;
+	width: 300px;
+	box-shadow: 2px 2px 10px #c1c1c1;
+}
+.special .experts {
+	position: relative;
+}
+.special .expert .eximg {
+	height: 250px;
+	overflow: hidden;
+}
+.special .expert .eximg img {
+	width: 100%;
+}
+.special .expert .exCon {
+	padding: 15px;
+}
+.special .expert .exCon .exname {
+	float: left;
+	text-align: left;
+	max-width: 50%;
+	overflow: hidden;
+	font-size: 15px;
+}
+.special .expert .exCon .exduty {
+	float: right;
+	text-align: right;
+	font-size: 14px;
+	color: #999999;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.special .expert .exCon .exintro {
+	display: block;
+	margin-top: 15px;
+	font-size: 13px;
+	margin-bottom: 10px;
+	height: 34px;
+	overflow: hidden;
+}
+.special .expert .exbg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	display: none;
+}
+.special .expert .exlink {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 50%;
+	top: 100px;
+	left: calc(50% - 60px);
+	left: -moz-calc(50% - 60px);
+	left: -webkit-calc(50% - 60px);
+	left: -ms-calc(50% - 60px);
+	left: -o-calc(50% - 60px);
+	text-align: center;
+	color: white;
+	background: #0acd8a;
+	font-size: 18px;
+	display: none;
+	z-index: 999;
+}
+.special .expert:hover .exbg{
+	display: block;
+}
+.special .expert:hover .exlink{
+	display: block;
+}
+.special .expert:nth-child(1) {
+	float: left;
+}
+.special .expert:nth-child(2) {
+	position: absolute;
+	left: calc(50% - 150px);
+}
+.special .expert:nth-child(3) {
+	float: right;
+}
+.special .courseDom {
+	margin-top: 60px;
+}
+.special .courseAll {
+	position: relative;
+	min-height: 200px;
+	border: 1px solid #36b3fa;
+	border-top: 0px;
+	padding: 25px 15px 30px 15px;
+	margin-top: 29px;
+}
+.special .courseAll .couseboder {
+	position: absolute;
+	height: 30px;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #36b3fa;
+	border-top-left-radius: 22px;
+	border-top-right-radius: 22px;
+	border-bottom: 0;
+	top: -30px;
+	left: 0px;
+}
+.special .courseAll .couseboder .rutop {
+	width: 100px;
+	height: 100%;
+	background: #FFFFFF;
+}
+.special .courseAll .rubottom {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background: #FFFFFF;
+	bottom: -1px;
+}
+.special .courseAll:last-child {
+	border-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.special .courseAll:first-child .couseboder {
+	border: 0;
+}
+.special .courseDiv1 {
+	border-right: 0;
+	border-bottom-left-radius: 22px;
+}
+.special .courseDiv1 .couseboder {
+	border-right: 0;
+	border-top-left-radius: 22px;
+}
+.special .courseDiv1 .rutop {
+	float: right;
+	margin-right: -1px;
+}
+.special .courseDiv1 .rubottom {
+	right: 0;
+}
+.special .courseDiv2 {
+	border-left: 0;
+	border-bottom-right-radius: 22px;
+}
+.special .courseDiv2 .couseboder {
+	border-left: 0;
+	border-top-right-radius: 22px;
+}
+.special .courseDiv2 .rutop {
+	float: left;
+	margin-left: -1px;
+}
+.special .courseDiv2 .rubottom {
+	left: 0;
+}
+.special .coursetop1 {
+	position: relative;
+	height: 80px;
+}
+.special .coursetop1 .ctopbg img {
+	float: right;
+}
+.special .coursetop1 .partTitle {
+	margin-left: 80px;
+	font-size: 28px;
+	color: #3bbfe6;
+}
+.special .coursetop2 {
+	position: relative;
+	height: 80px;
+}
+.special .coursetop2 .ctopbg img {
+	float: left;
+	transform: rotate(180deg);
+}
+.special .coursetop2 .partTitle {
+	float: right;
+	margin-right: 80px;
+	font-size: 28px;
+	color: #3bbfe6;
+}
+.special .ctopbg {
+	background: #f9f9f9;
+	line-height: 80px;
+}
+.special .partA {
+	background: white;
+	position: absolute;
+	width: 128px;
+	height: 128px;
+	border: 1px solid #3bbfe6;
+	border-radius: 50%;
+}
+.special .partA .partB {
+	width: calc(100% - 20px);
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: -ms-calc(100% - 20px);
+	width: -o-calc(100% - 20px);
+	height: calc(100% - 20px);
+	height: -webkit-calc(100% - 20px);
+	height: -moz-calc(100% - 20px);
+	height: -ms-calc(100% - 20px);
+	height: -o-calc(100% - 20px);
+	border: 5px solid #3bbfe6;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 10px;
+}
+.special .partA .partB .partC {
+	width: calc(100% - 20px);
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: -ms-calc(100% - 20px);
+	width: -o-calc(100% - 20px);
+	height: calc(100% - 20px);
+	height: -webkit-calc(100% - 20px);
+	height: -moz-calc(100% - 20px);
+	height: -ms-calc(100% - 20px);
+	height: -o-calc(100% - 20px);
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 10px;
+	background: #3bbfe6;
+	color: white;
+	text-align: center;
+	line-height: 78px;
+	font-size: 24px;
+}
+.special .coursetop1 .partA {
+	left: -79px;
+	top: -25px;
+}
+.special .coursetop2 .partA {
+	right: -79px;
+	top: -25px;
+}
+.special .courselist a {
+	color: #000000;
+}
+.special .courselist .course {
+	margin-top: 45px;
+	padding: 2px;
+	border: 1px solid white;
+}
+.special .courselist .course:hover {
+	border: 1px solid #36b3fa;
+}
+.special .courselist .course .courseImg {
+	width: 200px;
+	height: 120px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.special .courselist .course .courseTB {
+	width: 200px;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.special .courselist .course .imgTitle {
+	height: 120px;
+	max-width: 160px;
+	margin: auto;
+	vertical-align: middle;
+	font-size: 17px;
+}
+.special .courselist .course .courseImg img {
+	width: 100%;
+}
+.special .courselist .course .courseRight {
+	padding: 5px 15px 5px 15px;
+	width: calc(100% - 230px);
+	width: -webkit-calc(100% - 230px);
+	width: -moz-calc(100% - 230px);
+	width: -ms-calc(100% - 230px);
+	width: -o-calc(100% - 230px);
+	float: left;
+	height: 110px;
+	position: relative;
+}
+.special .courselist .course .courseRight .courseName {
+	display: block;
+	color: #666666;
+	font-size: 15px;
+}
+.special .courselist .course .courseRight .courseCon {
+	margin-top: 8px;
+	height: 52px;
+	overflow: hidden;
+}
+.special .courselist .course .courseRight .courseCon table {
+	color: #8a8a8a;
+	font-size: 13px;
+	line-height: 200%;
+	height: 100%;
+}
+.special .courselist .course .courseRight .courseCon tr {
+	width: 100%;
+	height: 100%;
+}
+.special .courselist .course .courseRight .courseCon tr td {
+	padding: 0;
+	width: 100%;
+}
+.special .courselist .course .courseRight .courselike {
+	font-size: 13px;
+	color: #666666;
+	position: absolute;
+	bottom: 8px;
+}
+.special .courselist .course .courseRight .courselike .like {
+	color: #0acd8a;
+}

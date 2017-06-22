@@ -1,0 +1,5 @@
+.calendarclear {position:absolute; right:20px; top:6px;}
+
+
+
+.rc-calendar-picker {z-index: 3000;}

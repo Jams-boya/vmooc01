@@ -1,0 +1,41 @@
+.account_balance {
+  color: red;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+.myaccount {
+  padding-left: 20px
+}
+.myaccount_note {
+  color: gray;
+  padding-left: 10px;
+}
+
+#laundrylist {
+  padding-top: 20px;
+  
+}
+
+.refer {
+  float: left;
+  margin-left: 20px;
+  margin-top: 12px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Microsoft YaHei';
+}
+td {
+  font-size: 12px
+}
+th {
+  font-size: 14px
+}
+.ant-steps-icon {
+  line-height: inherit !important;
+}
+.step {
+  margin-bottom: 20px;
+}

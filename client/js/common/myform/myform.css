@@ -1,0 +1,51 @@
+.form-inline .control-label {
+    white-space: nowrap;
+    padding: 10px 5px 0px 0px;
+}
+
+
+.Select-control {min-width: 100px;}
+
+.month-picker{
+    padding: 0;
+    margin: 0;
+    height: 32px;
+  }
+
+.month-picker > .box {
+  cursor: pointer;    
+  padding: 0px 10px;
+    line-height: 30px;
+}
+
+.month-picker > .container .popup { 
+  left: 0;
+}
+
+.month-picker > .container.show {
+
+    top: -10px;
+}
+
+.month-picker > .container .popup.light .pad .btn {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .month-picker > .box {
+    box-sizing: border-box; 
+    color: #777777;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 768px) {
+  .month-picker > .box {
+    border: 1px solid #e0e0e0;
+    background-color: #f6f6f6;
+    padding-left: 0.9rem;
+    box-sizing: border-box; 
+    color: #525252;
+  }
+  .month-picker > .box > label {  
+  }
+}

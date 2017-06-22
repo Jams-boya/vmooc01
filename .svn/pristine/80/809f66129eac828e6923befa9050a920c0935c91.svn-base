@@ -1,0 +1,286 @@
+body
+{
+	margin: 0;
+}
+.public
+{
+	font-family: "Microsoft Yahei";
+	min-width: 755px;
+}
+.public a
+{
+	color: black;
+	text-decoration: none;
+}
+.public a:hover
+{
+	color: black;
+	text-decoration: none;
+}
+.public .head
+{
+	height: 45px;
+	line-height: 45px;
+}
+/*.public .head img
+{
+	height: 45px;
+}*/
+.public .head span
+{
+	float: right;
+	margin-right: 20px;
+}
+.public .head .spanone
+{
+	margin-right: 0;
+}
+.public .head span a
+{
+	color: black;
+	text-decoration: none;
+}
+.public .menudiv
+{
+	height: 200px;
+	background: url(./public.png) no-repeat;
+	background-size: 100% 200px;
+}
+.public .menu
+{
+	height: 100%;
+	line-height: 200px;
+	position: relative;
+}
+.public .menu .prot
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #CE8483;
+	margin-top: 50px;
+	float: left;
+	margin-left: 40px;
+}
+.public .menu .name
+{
+	font-size: 26px;
+	float: left;
+	margin-left: 20px;
+}
+.public .menu .platform
+{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	position: absolute;
+	top: calc(50% + 20px);
+	top: -webkit-calc(50% + 20px);
+	top: -moz-calc(50% + 20px);
+	top: -ms-calc(50% + 20px);
+	top: -o-calc(50% + 20px);
+	left: calc(13% + 20px);
+	left: -webkit-calc(13% + 20px);
+	left: -moz-calc(13% + 20px);
+	left: -ms-calc(13% + 20px);
+	left: -o-calc(13% + 20px);
+}
+.public .menu .exit a
+{
+	color: #5F646A;
+}
+.public .menu .exit
+{
+	float: left;
+	margin-left: 10px;
+	line-height: 210px;
+}
+.public .menu .change
+{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	position: absolute;
+	top: calc(50% + 20px);
+	top: -webkit-calc(50% + 20px);
+	top: -moz-calc(50% + 20px);
+	top: -ms-calc(50% + 20px);
+	top: -o-calc(50% + 20px);
+	left: calc(21% + 20px);
+	left: -webkit-calc(21% + -22px);
+	left: -moz-calc(21% + -22px);
+	left: -ms-calc(21% + -22px);
+	left: -o-calc(21% + -22px);
+}
+.public .menu .change a{
+	color: #00B700;
+}
+.public .menu .menuspan
+{
+	margin-left: 30px;
+	float: left;
+	font-size: 18px;
+	line-height: 205px;
+}
+.public .menu .menuspanone
+{
+	margin-left: 100px;
+}
+.public .menu .menuspan a
+{
+	color: black;
+	text-decoration: none;
+}
+.public .menu .menuspan a:hover
+{
+	color: #21BA10;
+}
+.public .load
+{
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+}
+.public .load span
+{
+	margin: 0;
+}
+.public .load span a
+{
+	color: black;
+	text-decoration: none;
+}
+.public .load span a:hover
+{
+	color: #21BA10;
+}
+.public .pubcon
+{
+	margin-top: 20px;
+}
+.public .pubmenu
+{
+	min-height: 550px;
+	width: 170px;
+	border: 1px solid #E4E4E4;
+	position: relative;
+	margin-top: 30px;
+	float: left;
+}
+.public .pubmenu img
+{
+	position: absolute;
+	width: 74%;
+	bottom: 20px;
+	left: 13%;
+}
+.public .pubmenu div
+{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E4E4E4;
+	position: relative;
+
+}
+.public .pubmenu div:last-child
+{
+	border-bottom: 0px;
+}
+.public .pubmenu span
+{
+	display: table;
+	margin: auto;
+	position: relative;
+}
+.public .pubmenu span a
+{
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+
+}
+.public .pubmenu span .signline
+{
+	width: 100%;
+	height: 2px;
+	background: #21BA10;
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	display: none;
+}
+.public .pubmenu .cir
+{
+	width: 15px;
+	height: 15px;
+	color: white;
+	border-radius: 50%;
+	background: red;
+	line-height: 15px;
+	position: absolute;
+	right: 15px;
+	top: 18px;
+	font-size: 10px;
+}
+.public .pubmenu span a:hover
+{
+	font-size: 16px;
+}
+.public .pubmenu span a:hover + .signline
+{
+	display: block;
+}
+.public .con
+{
+	float: left;
+	width: calc(100% - 190px);
+	width: -moz-calc(100% - 190px);
+	width: -webkit-calc(100% - 190px);
+	width: -ms-calc(100% - 190px);
+	margin-left: 20px;
+
+}
+.public .con .contitle
+{
+	height: 30px;
+	line-height: 30px;
+	color: black;
+}
+.public .con .conbody
+{
+	min-height: 550px;
+}
+.fa-chevron-right:before {
+	content:"";
+}
+/*左侧菜单栏*/
+#accordion{
+	box-shadow: 0px 0px 0px 1px #E0E1E1;
+	font-family: "Microsoft Yahei"!important;
+	margin-top: 56px;
+}
+.weixin {
+	margin-top: 14px;
+	margin-left: 20px;
+	margin-right: 0px;
+	position: relative;
+	cursor: pointer;
+}
+.headimgdiv img{
+	position: absolute;
+	top: 30px;
+	right:-32px;
+	width:80px;
+	display: none;
+}
+.weixin:hover .headimgdiv img {
+	display: block;
+}
+#menu {
+	margin: auto;
+	float: none;
+	margin-left: none;
+}

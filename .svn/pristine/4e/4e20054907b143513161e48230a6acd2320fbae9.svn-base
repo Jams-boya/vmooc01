@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/layouts/public_layout/bundle.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">{{{_sections.appcss}}}</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="topbar-wrap topbar-clearfix">
+          <div class="topbar-head topbar-left">
+            <a id="srp-for-the-angel" style="visibility:hidden" class="accessibility-ast topbar-btn topbar-left" href="javascript:void(0)" ng-click="skipToContent()">Skip to content</a>
+            <a href="/" class="topbar-logo topbar-left" aliyun-console-spm="1" data-spm-click="gostr=/aliyun;locaid=d1;;">
+              <img src="{{user.companyLogo}}" width="50" height="50" />
+            </a>
+            <a href="http://home.console.aliyun.com" role="menuitem" aria-haspopup="false" target="_self" class="topbar-home-link topbar-btn topbar-left" aliyun-console-spm="2" data-spm-click="gostr=/aliyun;locaid=d2;;">
+              <span ng-bind="navLinks.home.text" class="ng-binding">{{user.companyName}}</span>
+            </a>
+          </div>
+          <div class="topbar-info topbar-right topbar-clearfix">
+           
+            <div class="topbar-left topbar-workorder topbar-info-item ng-scope" ng-if="navLinks.workorder.show">
+              <div class="dropdown" dropdown="">
+                <a href="#" role="menuitem" aria-haspopup="true" aria-label="press enter to expand" class="dropdown-toggle topbar-btn" data-toggle="dropdown" aliyun-console-spm="51" data-spm-click="gostr=/aliyun;locaid=d51;;">
+                  <span ng-bind="navLinks.workorder.text" class="ng-binding">工单服务</span>
+                  <!-- ngIf: navLinks.workorder.showNew -->
+                  <span class="icon-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- ngRepeat: link in navLinks.workorder.links -->
+                  <li ng-repeat="link in navLinks.workorder.links" class="topbar-info-btn ng-scope">
+                    <a href="https://workorder.console.aliyun.com/#/ticket/list/" role="menuitem" target="_blank" aliyun-console-spm="510" data-spm-click="gostr=/aliyun;locaid=d510;;">
+                      <span class="ng-binding">我的工单</span>
+                      <!-- ngIf: link.showNew --> </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.workorder.links -->
+                  <li ng-repeat="link in navLinks.workorder.links" class="topbar-info-btn ng-scope">
+                    <a href="https://home.console.aliyun.com/common/navRedirect.html?typeId=workorderAdd&amp;productId=ecs" role="menuitem" target="_blank" aliyun-console-spm="511" data-spm-click="gostr=/aliyun;locaid=d511;;">
+                      <span class="ng-binding">提交工单</span>
+                      <!-- ngIf: link.showNew --> </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.workorder.links --> </ul>
+              </div>
+            </div>
+            <!-- end ngIf: navLinks.workorder.show -->
+            <!-- 备案 -->
+            <!-- ngIf: navLinks.icp.show -->
+            <div class="topbar-left topbar-accesskeys topbar-info-item ng-scope" ng-if="navLinks.icp.show">
+              <a href="http://beian.aliyun.com/" role="menuitem" target="_blank" class="topbar-btn ng-binding" aliyun-console-spm="52" data-spm-click="gostr=/aliyun;locaid=d52;;">
+                备案
+                <!-- ngIf: navLinks.icp.showNew --> </a>
+            </div>
+            <!-- end ngIf: navLinks.icp.show -->
+            <!-- 帮助 -->
+            <!-- ngIf: navLinks.help.show -->
+            <div class="topbar-left topbar-help topbar-info-item ng-scope" ng-if="navLinks.help.show">
+              <div class="dropdown" dropdown="">
+                <a href="#" role="menuitem" aria-haspopup="true" aria-label="press enter to expand" class="dropdown-toggle topbar-btn" data-toggle="dropdown" aliyun-console-spm="53" data-spm-click="gostr=/aliyun;locaid=d53;;">
+                  <span ng-bind="navLinks.help.text" class="ng-binding">帮助</span>
+                  <!-- ngIf: navLinks.help.showNew -->
+                  <span class="icon-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- ngRepeat: link in navLinks.help.links -->
+                  <li ng-repeat="link in navLinks.help.links" class="topbar-info-btn ng-scope">
+                    <a href="http://www.aliyun.com/act/aliyun/console/faq.html" target="_blank" aliyun-console-spm="510" data-spm-click="gostr=/aliyun;locaid=d510;;">
+                      <span class="ng-binding">FAQ</span>
+                      <!-- ngIf: link.showNew --> </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.help.links -->
+                  <li ng-repeat="link in navLinks.help.links" class="topbar-info-btn ng-scope">
+                    <a href="http://help.aliyun.com" target="_blank" aliyun-console-spm="511" data-spm-click="gostr=/aliyun;locaid=d511;;">
+                      <span class="ng-binding">帮助中心</span>
+                      <!-- ngIf: link.showNew --> </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.help.links -->
+                  <li ng-repeat="link in navLinks.help.links" class="topbar-info-btn ng-scope">
+                    <a href="http://docs.aliyun.com" target="_blank" aliyun-console-spm="512" data-spm-click="gostr=/aliyun;locaid=d512;;">
+                      <span class="ng-binding">文档中心</span>
+                      <!-- ngIf: link.showNew --> </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.help.links -->
+                  <li ng-repeat="link in navLinks.help.links" class="topbar-info-btn ng-scope">
+                    <a href="http://bbs.aliyun.com" target="_blank" aliyun-console-spm="513" data-spm-click="gostr=/aliyun;locaid=d513;;">
+                      <span class="ng-binding">论坛</span>
+                      <!-- ngIf: link.showNew --> </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.help.links --> </ul>
+              </div>
+            </div>
+            <!-- end ngIf: navLinks.help.show -->
+            <!-- 新版当页帮助 -->
+            <!-- ngIf: navLinks.customHelp.show -->
+            <!-- 其他entrance区域 -->
+            <!-- ngRepeat: entry in navLinks.entrances -->
+            <!-- user -->
+            <!-- ngIf: navLinks.user.show -->
+            <div class="topbar-left topbar-user ng-scope" ng-class="{'topbar-user-large':account.currentStructure}" ng-if="navLinks.user.show">
+              <div class="dropdown topbar-info-item" dropdown="">
+                <a href="#" role="menuitem" aria-haspopup="true" aria-label="press enter to expand" class="dropdown-toggle topbar-btn" data-toggle="dropdown" aliyun-console-spm="6" data-spm-click="gostr=/aliyun;locaid=d6;;">
+                  <span ng-bind="account.aliyunId" title="account.aliyunIdOrigin" class="ng-binding"></span>
+                  <span class="icon-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- ngIf: account.currentStructure -->
+                  <!-- ngIf: account.loginStructure -->
+                  <!-- ngRepeat: link in navLinks.user.links -->
+                  <li ng-repeat="link in navLinks.user.links" class="topbar-info-btn ng-scope">
+                    <a href="https://account.aliyun.com/logout/logout.htm?oauth_callback=https%3A%2F%2Fecs.console.aliyun.com%2F%23%2Fserver%2Fregion%2Fcn-hangzhou" role="menuitem" target="_self" aliyun-console-spm="600" data-spm-click="gostr=/aliyun;locaid=d600;;">
+                      <span class="ng-binding">退出</span>
+                    </a>
+                  </li>
+                  <!-- end ngRepeat: link in navLinks.user.links -->
+                  <!-- ngIf: account.currentStructure --> </ul>
+              </div>
+            </div>
+            <!-- end ngIf: navLinks.user.show -->
+            <!-- 国际化 -->
+            <!-- ngIf: navLinks.i18n.show && navLinks.i18n.currentLanguage --> </div>
+          <!-- ngIf: navLinks.customHelp.show && helpConfig --> </div>
+      </div>
+      <!-- /top navigation -->
+
+      <div class="col-md-3 left_col menu_fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="/" class="site_title">
+              <img src="{{user.companyLogo}}" class="img-circle sitelog_img"/>
+              <span>{{user.companyName}}</span>
+            </a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile">
+            <div class="profile_pic">
+              <img src="{{user.logo}}" alt="..." class="img-circle profile_img"></div>
+            <div class="profile_info">
+              <h2>{{user.name}}</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <ul class="nav side-menu">
+                <li>
+                  <a href="/"> <i class="fa fa-home"></i>
+                    我的工作台
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a> <i class="fa fa-edit"></i>
+                    线索客户
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/customer">客户管理</a>
+                    </li>
+                    <li>
+                      <a href="/customer/visit">上门预约</a>
+                    </li>
+                    <li>
+                      <a href="/customer/transfer">客户转移</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-edit"></i>
+                    合同管理
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/contract">合同管理</a>
+                    </li>
+                    <li>
+                      <a href="/contract/process">合同进度</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-edit"></i>
+                    学员面授管理
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/teaching">课程安排</a>
+                    </li>
+                    <li>
+                      <a href="/teaching/sign">学员签到</a>
+                    </li>
+                    <li>
+                      <a href="#">报表</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-edit"></i>
+                    进销存管理
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/warehouse">库存管理</a>
+                    </li>
+                    <li>
+                      <a href="/warehouse/storage">物品入库</a>
+                    </li>
+                    <li>
+                      <a href="/warehouse/returngoods">退货</a>
+                    </li>
+                    <li>
+                      <a href="/warehouse/transfer">转仓</a>
+                    </li>
+                    <li>
+                      <a href="/warehouse/sale">销售</a>
+                    </li>
+                    <li>
+                      <a href="/warehouse/hire">出租</a>
+                    </li>
+                    <li>
+                      <a href="/warehouse/report">统计报表</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-edit"></i>
+                    人事管理
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/hr/org">机构与部门</a>
+                    </li>
+                    <li>
+                      <a href="/hr/role">人员与角色</a>
+                    </li>
+                    <li>
+                      <a href="/hr/admin">系统管理员</a>
+                    </li>
+                    <li>
+                      <a href="/hr/staff">人员信息管理</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-desktop"></i>
+                    管理报表
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/reports/target">计划指标</a>
+                    </li>
+                    <li>
+                      <a href="/reports/market">市场报表</a>
+                    </li>
+                    <li>
+                      <a href="/reports/sale">销售报表</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-bug"></i>
+                    系统管理
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="/basicData">基础数据设置</a>
+                    </li>
+                    <li>
+                      <a href="/company">公司管理</a>
+                    </li>
+                    <li>
+                      <a href="/branch">分店管理</a>
+                    </li>
+                    <li>
+                      <a href="/account">用户管理</a>
+                    </li>
+                    <li>
+                      <a href="/account/roleentry">角色与权限</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- /sidebar menu --> </div>
+      </div>
+
+      <!-- page content -->
+      <div class="right_col content_fixed" role="main">{{{body}}}</div>
+
+      <!-- /page content --> </div>
+  </div>
+  <script src="//cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script>
+  <script src="/layouts/public_layout/bundle.js"></script>
+  {{{_sections.appjs}}}
+
+    {{{_sections.globlecontent}}}
+</body>
+</html>

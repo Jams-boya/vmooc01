@@ -1,0 +1,37 @@
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+.static-modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+}
+.static-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+}
+
+.nocard {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mycard_row {
+  padding-bottom: 30px;
+}
+td {
+  font-size: 12px
+}
+th {
+  font-size: 14px
+}

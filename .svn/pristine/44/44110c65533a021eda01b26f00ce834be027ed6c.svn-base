@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="notpay">
+    <div id="subNav">
+      <span>课程</span><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span><span>问答</span>
+    </div>
+    <div id="main">
+      <div id="main-left">
+        <!-- 课程问题 -->
+        <div id="content">
+          <div class="cleft">
+            <img src="{{config.avatorUrl}}/vmooc/findPicOther/{{question.askerId}}" class="img-circle" />
+            <p id="askNick"></p>
+          </div>
+          <div class="cright">
+            <div id="ctitle">{{question.title}}</div>
+            <div id="cnote"> 来自课程《<a href="/course/{{question.courseId}}">{{question.courseName}}</a>》</div>
+            <div id="cmain"> {{question.content}}</div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <!-- 小箭头 -->
+        <div id="seat">
+          <div class="arrow-down"></div>
+        </div>
+        <!-- 讲师回答 -->
+        <div class="answer">
+          <div class="expertAnswer" style="display:none">
+            <div class="anTitle">我来回答</div>
+            <div>
+              <textarea class="anCon" placeholder="请在此处回答问题"></textarea>
+              <div class="clear"></div>
+            </div>
+            <div>
+              <div class="anBtn">提交</div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <!-- 相关推荐 -->
+        <div class="about">
+          <div class="row1">
+            <div class="rowabout"> 相关推荐
+              <div></div>
+            </div>
+            <div class="aboutqa">
+              <div class="ablist"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-right">
+      <!-- 推荐专家 -->
+      <div id="cright"></div>
+    </div>
+
+  </div>
+
+</div>
+<div class="buy-modal"></div>
+<div class="test clearfix"></div>
+
+{{#section 'appjs'}}
+<script>
+  var que = {{{jstringfiy question}}};
+  var question = '{{question._id}}';
+  var content = '{{question.content}}';
+  var courseid = '{{question.courseId}}';
+  var askerId = '{{question.askerId}}';
+</script>
+<script src="/expertqa/notpay/bundle.js"></script> {{/section}} {{#section 'appcss'}}
+<link rel="stylesheet" href="/expertqa/notpay/bundle.css"> {{/section}}

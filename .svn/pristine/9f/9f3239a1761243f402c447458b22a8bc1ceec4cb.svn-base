@@ -1,0 +1,89 @@
+<div class="prodet">
+  <!---banner-->
+  <div class="banner">
+    <input type="hidden" id="courseid" value="{{course._id}}">
+    <div class="bandiv">
+      <img src="/images/course/probanner.png" />
+      <div class="bancondiv">
+        <div class="bancon container">
+          <span class="banload">
+            <a href="/course/" id="all">全部课程</a>
+            &nbsp;>&nbsp;
+            <!--<a onload="location.href=encodeURI("/course/?classify={{course.classify}}")" class="courseClassify" id="classfy">{{course.classify}}</a>-->
+            <a href="#" class="courseClassify" id="classfy">{{course.classify}}</a>
+            &nbsp;>&nbsp;
+            <span>{{course.name}}</span>
+          </span>
+          <div class="share">
+            <img class="collect" heartFlag='0' src="/images/course/heart.png" />
+            <a class="cola" style="cursor: default;" href="javascript: void(0)">收藏</a>
+            <img src="/images/course/save.png" />
+            <a href="#">分享</a>
+          </div>
+          <div class="banimg">
+            <div class="banimgtitle">
+              <div class="divbor"></div>
+              <div class="divbor"></div>
+              <span class="bantitle">{{course.name}}</span>
+              <div class="clear"></div>
+            </div>
+            <div class="bantxt">{{course.description}}</div>
+            <span class="staspan">
+              总长&nbsp;&nbsp;{{toFixed course.totalTime 1}}分钟
+              &nbsp;&nbsp;&nbsp;{{course.purchaseCount}}次购买
+            </span>
+          </div>
+          <div class="banmonery">￥{{course.price}}</div>
+          <div class="buybtn">立即购买</div>
+          <div class="buy-modal"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main -->
+  <div class="prodetcon container">
+    <div class="proleft">
+      <div class="promenu">
+        <span>课程介绍<div class="menuline"></div></span>
+        <span>课程目录<div class="menuline"></div></span>
+        <span>专家答疑<div class="menuline"></div><div class="re">热</div></span>
+      </div>
+      <!-- course introduce -->
+      <div class="project">
+        <div class="courseIntro"></div>
+      </div>
+      <!-- course catalog -->
+      <div class="project" style="overflow-y">
+        <div class="courseCatalog"></div>
+      </div>
+      <!-- course solve -->
+      <div class="project">
+        <div class="quetop">
+          <div>购买该讲师的课程</div>
+          <div>就可以低价向<span style="color:#27AE24">Ta</span>发起提问啦！</div>
+          <!--<span><img src="/images/course/hand.png"/><a class="buybtn">点击购买</a></span>-->
+          <div class="topay"></div>
+        </div>
+        <div class="quetitle">
+          本课程共有<span style="color:red">{{course.answer}}</span>个问题，得到了讲师的回答
+        </div>
+        <!-- courseqa -->
+        <div class="quelist" style="overfolw-y:auto"></div>
+      </div>
+    </div>
+
+    <div class="proright">
+      <!-- user relevant -->
+      <div class="usersContainer"></div>
+      <!-- course relevant -->
+      <div class="coursesContainer"></div>
+    </div>
+  </div>
+
+  <div class="reply"></div>
+
+
+  {{#section 'appjs'}}
+  <script src="/course/detail/bundle.js"></script>
+  {{/section}} {{#section 'appcss'}}
+  <link rel="stylesheet" href="/course/detail/bundle.css"> {{/section}}

@@ -1,0 +1,25 @@
+<div class="special">
+  <div class="buy-modal"></div>
+  <div class="topDom"></div>
+
+
+  <div class="title mid">
+    <img src="/img/special/nom1.png" />
+    <span>专家讲师</span>
+  </div>
+
+  <div class="expertsDom mid"></div>
+  <div class="title mid">
+    <img src="/img/special/nom2.png" />
+    <span>课程合辑</span>
+  </div>
+
+  <div class="courseDom mid"></div>
+</div>
+
+<script>
+  var collection_id = '{{id}}';
+</script>
+{{#section 'appjs'}}
+<script src="/special/special//bundle.js"></script> {{/section}} {{#section 'appcss'}}
+<link rel="stylesheet" href="/special/special/bundle.css"> {{/section}}

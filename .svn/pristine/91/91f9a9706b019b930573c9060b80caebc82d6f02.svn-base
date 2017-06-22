@@ -1,0 +1,42 @@
+<div class="row signModal">
+  <div class="signupContent">
+    <div class="row">
+      <div class="row" style="width: 500px;margin-left: auto;margin-right: auto; border: 1px; background: white;padding-bottom: 40px;padding-top: 20px;margin-top:80px">
+        {{#if error}}
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3" style="margin-top: 10px">
+            <div class="alert alert-warning">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong>{{error}}</strong>
+            </div>
+          </div>
+        </div>
+        {{/if}}
+        <div class="col-md-6 col-md-offset-3" style="margin-top: 10px">
+          <img src='/images/mhp_logo.png' style="background: white" />
+        </div>
+        <form action='/signin' method='post'>
+          <div class="col-md-6 col-md-offset-3" style="margin-top: 10px">
+            <input type="text" class="form-control" id="username" name="username" placeholder="登录名">
+          </div>
+          <div class="col-md-6 col-md-offset-3" style="margin-top: 10px">
+            <input type="password" class="form-control" id="password" name='password' placeholder="密码">
+          </div>
+          <div class="col-md-6 col-md-offset-3" style="margin-top: 10px;text-align: center">
+            <button type="submit" class='btn btn-success col-md-5'>登录</button>
+            <div class="col-md-2"></div>
+            <button class='btn btn-default col-md-5'>取消</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('.navul').html('<li><a href="/">登录</a></li>');
+    $('.p_index_logo').attr('src', '/images/logo2.png');
+    $('.couslin').hide();
+    $('.sear').hide();
+  });
+</script>

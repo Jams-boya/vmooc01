@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="load">
+    <span><a href="/myCourses" style="color:#2db7f5;text-decoration:none"  id="userCenter">用户中心</a></span>&nbsp;>&nbsp;
+    <span><a href="/personal?url=/personal" style="color:#2db7f5;text-decoration:none" id="manages">账号管理</a></span>&nbsp;>&nbsp;
+    <span><a href="/qasetup" style="color:#2db7f5;text-decoration:none" id="qasetup">问答管理</a></span>
+  </div>
+  <div class="pubmenu" style="float:left;width:13%;">
+    <!-- nav -->
+  </div>
+  <div class="con" style="margin-top:20px;">
+    <div class="contitle">
+      <span class="refer">讲师问答管理</span>
+    </div>
+    <div style="clear: none;margin-bottom: 10px;"></div>
+  </div>
+  <div class="conbody" style=" width:85%;float:right;">
+      <div class="message">
+        <!-- body -->
+        <div class="qasetup"></div>
+      </div>
+  </div>
+</div>
+{{#section 'appjs'}}
+<script>
+  {{#if teacherId}}
+    var teacherId = {{{jstringfiy teacherId}}};
+  {{/if}}
+</script>
+<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/public/qasetup/bundle.js"></script>
+<script>
+  var winPath = window.location.pathname;
+  var qasetup = $('#qasetup')[0].pathname;
+  if(winPath == qasetup){
+    $('#qasetup').css("color","#21BA10");
+    $('#personal').css("color","#21BA10");
+  }
+</script>
+{{/section}}
+{{#section 'appcss'}}
+<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/public/qasetup/bundle.css">
+{{/section}}

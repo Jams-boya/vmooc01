@@ -1,0 +1,264 @@
+body {
+	font-family: "Microsoft Yahei"!important;
+}
+.conbody {
+	border: 1px solid #E4E4E4;
+}
+.refer{
+  font-size: 15px;
+	float: left;
+	margin-left: 20px;
+}
+.navigation{
+	float: right;
+}
+.microCourse {
+  width: 100%;
+}
+.microCourse .microCoursetab {
+  font-size: 14px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+.star {
+  color: red;
+}
+.suffix {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.suffixbr {
+  display: block;
+  color: #AEAEAE;
+  font-size: 13px;
+  margin-top: 10px;
+}
+tr td {
+  padding-bottom: 30px;
+}
+tr td:first-child {
+  vertical-align: top;
+  padding-top: 6px;
+  padding-right: 20px;
+}
+input,select {
+  padding: 5px;
+  font-size: 13px;
+}
+select {
+  width: 200px;
+}
+.microCourse .name {
+  width: 300px;
+}
+.price {
+  width: 80px;
+}
+.next {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background: #3CCC86;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: auto;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+.imgDiv {
+  position: relative;
+  width: 90px;
+  height: 55px;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.imgDiv img {
+  width: 100%;
+}
+.imgDiv .imgbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0.2;
+  display: none;
+}
+.imgDiv .selectImg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  top: calc(50% - 14px);
+  top: -webkit-calc(50% - 14px);
+  top: -moz-calc(50% - 14px);
+  top: -ms-calc(50% - 14px);
+  top: -o-calc(50% - 14px);
+  left: calc(50% - 14px);
+  left: -webkit-calc(50% - 14px);
+  left: -moz-calc(50% - 14px);
+  left: -ms-calc(50% - 14px);
+  left: -o-calc(50% - 14px);
+  display: none;
+}
+.imgDiv .selectImg img {
+  width: 100%;
+}
+.imgDiv:hover .imgbg{
+  display: block!important;
+}
+.imgDiv:hover .selectImg{
+  display: block!important;
+}
+#uploaddiv{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #BDBDBD;
+}
+#upfile{
+  width: 100px;
+  height: 75px;
+  background: none;
+  border: 0px;
+}
+#upfile:focus{
+  outline-style: none;
+  /*cursor: pointer;*/
+  cursor: hand;
+}
+#circle{
+width: 50px;
+height: 50px;
+background-color: white;
+color: black;
+text-align: center;
+border-radius: 100px;
+/*-webkit-border-radius: 10px;*/
+/*-moz-border-radius: 100px;*/
+border: 3px #86B082 solid;
+margin: 5px auto;
+}
+#triangle-left{
+width: 0px;
+height: 0px;
+color: white;
+text-align: center;
+border-top: 14px solid transparent;
+border-left: 28px solid #86B082;
+border-bottom: 14px solid transparent;
+margin-left: 12px;
+margin-top: 8px;
+}
+#uptext{
+  /*width: 0px;*/
+  /*margin: 20px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#usePeriod{
+  width: 100px;
+}
+
+
+.microlecture2 .microlecturetab2 {
+  font-size: 14px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+.microlecture2 tr td:first-child {
+  padding-top: 0px;
+}
+.microlecture2 tr td:last-child {
+  padding-top: 3px;
+}
+.microlecture2 .btnDiv {
+  display: table;
+  margin: auto;
+}
+.microlecture2 textarea {
+  width: 500px;
+  height: 120px;
+  font-size: 13px;
+  padding: 5px;
+}
+.microlecture2 .btnDiv .next {
+  float: left;
+}
+.microlecture2 .btnDiv #next2 {
+  margin-left: 15px;
+}
+.microlecture2 .btnDiv #prov {
+  margin-right: 15px;
+  background: #F09C18;
+}
+.navli{
+	margin-left: 20px;
+}
+.navdisc{
+	height: 10px;
+	float: right;
+}
+.navdisc span{
+	display: table;
+	float: left;
+	font-family: "Microsoft Yahei"!important;
+	font-size: 14px;
+}
+.disc{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #DDDEDF;
+	float: left;
+}
+.line{
+	height: 1px;
+	width: 40px;
+	background: #DDDEDF;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 3.5px;
+}
+.navdisc span:first-child .disc {
+  background-color:#3CCC86;
+}
+.navdisc span:first-child .line {
+  background-color:#3CCC86;
+}
+#back{
+	border: 0px;
+	background: none;
+	font-size: 14px;
+	font-family: "Microsoft Yahei"!important;
+  margin-top:7px;
+  margin-left:10px;
+  color:#3CCC86;
+}
+#back:focus {
+	outline-style: none;
+}
+.load span a {
+	color: #000000;
+}
+.load span a:hover {
+	color: #21BA10;
+}
+.load{
+	font-size:12px;
+}
+.pubmenu #accordion{
+  margin-top:40px;
+}

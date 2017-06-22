@@ -1,0 +1,67 @@
+.mbody{
+  width: 400px;
+  min-height: 260px;
+  margin: 0 auto;
+}
+.menu{
+  display: block;
+  float: left;
+  font-size: 16px;
+  margin-left:20px;
+}
+.payment{
+  float: left;
+  margin-left: 20px;
+}
+.zfspan{
+  cursor:pointer;
+  margin-left: 5px;
+}
+.pays{
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 70px;
+}
+.balance{
+  display: block;
+  float: left;
+  font-size: 16px;
+}
+.alipay{
+  display: block;
+  float: left;
+  font-size: 16px;
+}
+.money{
+  float: left;
+  margin-left: 20px;
+}
+.scan{
+  display: block;
+  float: left;
+  font-size: 16px;
+}
+.pay img{
+  width: 100px;
+  height: 100px;
+  margin-left: 6px;
+}
+.footer{
+  height: 30px;
+  padding-top: 80px;
+  text-align: right;
+}
+.topay{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.back{
+  color: #5FB760;
+  margin-top: 10px;
+}
+#line{
+  width:115%;
+  margin-left:-10%;
+  height: 1px;
+  background: #e5e5e5;
+}

@@ -1,0 +1,257 @@
+<div class="pubcon container">
+  <div class="load">
+    <span><a href="/courseManage" style="text-decoration:none;z-index:999;">讲师端</a></span>&nbsp;>&nbsp;
+    <span><a href="/courseManage" style="text-decoration:none;z-index:999;">课程管理</a></span>&nbsp;>&nbsp;
+    <span style="color:#00AA00">发布系列课程</span>
+  </div>
+
+  <div class="pubmenu" style="float:left;width:13%;">
+    <!-- nav -->
+  </div>
+  <div class="con">
+    <div class="contitle">
+      <span class="refer">发布课程</span>
+      <div class="navigation">
+        <div style="float:right;">
+          <span class="navli">课程基本信息</span>
+          <span class="navli">课程介绍</span>
+          <span class="navli">上传课程与试题</span>
+          <span class="navli">完成</span>
+        </div>
+        <div style="clear: none;"></div>
+        <div class="navdisc">
+          <span>
+            <div class="disc"></div>
+            <div class="line" style="width: 80px;"></div>
+          </span>
+          <span>
+            <div class="disc"></div>
+            <div class="line"></div>
+          </span>
+          <span>
+            <div class="disc"></div>
+            <div class="line"></div>
+          </span>
+          <span style="margin-right: 10px;">
+            <div class="disc"></div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div style="clear: none;margin-bottom: 10px;"></div>
+  </div>
+  <div class="conbody" style=" width:85%;float:right;">
+    <!-- wac -->
+    <div class="basicInfo basic basicInfoA">
+      <!--<div class="btitle">
+        <span>课程基本信息</span>
+        <div class="clear"></div>
+      </div>-->
+      <table class="basictb">
+        <tr>
+          <td>
+            <span class="star">* </span>课程名称
+          </td>
+          <td>
+            <input id="name" class="name" type="text" placeholder="填写课程名称" maxlength="16">
+            <span class="suffix"><span class="nameLength">0</span>/16</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>课程封面
+          </td>
+          <td>
+            <div class="courseImg">
+              <div class="imgDiv">
+                <img src="/img/courseManage/default1.png">
+                <div class="imgbg"></div>
+                <div class="selectImg">
+                  <img src="/img/courseManage/select.png">
+                </div>
+              </div>
+              <div class="imgDiv">
+                <img src="/img/courseManage/default2.png">
+                <div class="imgbg"></div>
+                <div class="selectImg">
+                  <img src="/img/courseManage/select.png">
+                </div>
+              </div>
+              <div class="imgDiv">
+                <img src="/img/courseManage/default3.png">
+                <div class="imgbg"></div>
+                <div class="selectImg">
+                  <img src="/img/courseManage/select.png">
+                </div>
+              </div>
+              <div class="imgDiv">
+                <img src="/img/courseManage/default4.png">
+                <div class="imgbg"></div>
+                <div class="selectImg">
+                  <img src="/img/courseManage/select.png">
+                </div>
+              </div>
+              <div class="imgDiv">
+                <img src="/img/courseManage/default5.png">
+                <div class="imgbg"></div>
+                <div class="selectImg">
+                  <img src="/img/courseManage/select.png">
+                </div>
+              </div>
+              <div class="imgDiv">
+                <img src="/img/courseManage/default6.png">
+                <div class="imgbg"></div>
+                <div class="selectImg">
+                  <img src="/img/courseManage/select.png">
+                </div>
+              </div>
+
+              <div class="clear"></div>
+            </div>
+            <!--<span class="suffixbr">图片尺寸***，大小不超过2M，支持jpg，bmp，png。</span>-->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>课程分类
+          </td>
+          <td>
+            <select id="classify" class="classify">
+        </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>课程方向
+          </td>
+          <td>
+            <select id="direction" class="direction">
+        </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>费&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用
+          </td>
+          <td>
+            <input id="price" class="price" maxlength="7" type="text" placeholder="填写课程费用" />
+            <span class="suffix">元 / 人</span>
+            <span class="suffixbr">课程建议价格：9.9 - 99元,平台会扣除一定费用作为平台建设费</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>使用期限
+          </td>
+          <td>
+            <span class="suffixbr" style="margin-top: 6px;">12 个月</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="next1 next">下一步</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="basicInfo basic basicInfoB">
+      <table class="basictb">
+        <tr>
+          <td>
+            <span class="star">* </span>课程简介
+          </td>
+          <td>
+            <textarea id="description" maxlength="50"></textarea>
+            <span class="suffix"><span class="desLength">0</span>/50</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>适用人群
+          </td>
+          <td>
+            <textarea id="suitableCrowd"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>基础能力
+          </td>
+          <td>
+            <textarea id="preliminary"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="star">* </span>授课目标
+          </td>
+          <td>
+            <textarea id="target"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="btnDiv">
+
+              <div class="prov next">上一步</div>
+            <div class="next2 next">下一步</div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- wac end -->
+    <div class="basicInfoC basic">
+      <div class="message">
+        <!-- body -->
+        <div class="tocbody"></div>
+      </div>
+      <div class="footer">
+        <button type="button" class="publish btn btn-primary" uploadType=0 option="addcourse" data-toggle="button" style="background:#43CA89;border:0px;margin-right:10px;">发布</button>
+        <button type="button" class="draft btn btn-primary" uploadType=1 option="addcourse" data-toggle="button" style="background:#5AB5F3;border:0px;margin-right:5px;">保存为草稿</button>
+        <button type="button" class="backclazz" style="color:#43CA89;">上一步</button>
+      </div>
+    </div>
+    <!-- body -->
+  </div>
+</div>
+<!--<div style="clear: both;"></div>-->
+</div>
+{{#section 'appjs'}}
+<script>
+  var courseId = false;
+  var teacherId;
+  var courseState;
+  {{#if teacherId}}
+    teacherId = {{{jstringfiy teacherId}}};
+  {{/if}}
+  {{#if courseId}}
+    courseId = {{{jstringfiy courseId}}};
+  {{/if}}
+  {{#if courseState}}
+    courseState = {{{jstringfiy courseState}}};
+  {{/if}}
+
+  //课程状态判断下架状态时按钮显示为提交审批
+  $(".footer").empty();
+  if (!courseState || courseState <= 1) {
+    var _btn = '<button type="button" class="publish btn btn-primary" uploadType=0 option="addcourse" data-toggle="button" style="background:#43CA89;border:0px;margin-right:10px;">发布</button>'
+    +'<button type="button" class="draft btn btn-primary" uploadType=1 option="addcourse" data-toggle="button" style="background:#5AB5F3;border:0px;margin-right:5px;">保存为草稿</button>'
+    +'<button type="button" class="backclazz" style="color:#43CA89;">上一步</button>';
+    $(".footer").append(_btn);
+  } else {
+    var _btn = '<button type="button" class="publish btn btn-primary" uploadType=2 option="addcourse" data-toggle="button" style="background:#43CA89;border:0px;margin-right:10px;"> 提交审批</button>'
+    +'<button type="button" class="backclazz" style="color:#43CA89;">上一步</button>';
+    $(".footer").append(_btn);
+  }
+
+</script>
+<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/expert/expertPublish/bundle.js"></script>
+ {{/section}}
+ {{#section 'appcss'}}
+<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/expert/expertPublish/bundle.css">
+ {{/section}}

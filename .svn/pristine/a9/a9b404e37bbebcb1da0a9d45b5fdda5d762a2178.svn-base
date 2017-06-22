@@ -1,0 +1,118 @@
+<div class="pubcon container" style="font-family: 'Microsoft YaHei';">
+  <div class="load">
+    <span><a href="/myCourses" style="color:black">学员端</a></span>&nbsp;>&nbsp;
+    <span style="color:#00AA00">赠送课程</span>
+  </div>
+
+  <div class="pubmenu" style="float:left;width:13%;height:500px;">
+    <!-- nav -->
+  </div>
+  <div class="con" style="margin-top:17px;">
+    <div class="contitle">
+      <span class="refer" style="font-size:20px;margin-left: 20px;">赠送好友</span>
+      <div class="navigation">
+        <div style="float:right;">
+        <div style="clear: none;"></div>
+      </div>
+      </div>
+      <div style="clear: none;margin-bottom: 10px;"></div>
+    </div>
+    <div class="conbody" style=" width:85%;float:right;height:765px;border:1px solid #E0E1E1;">
+      <div class="orderInfo" style="height:80px;width:100%;margin-top:50px;text-align: center;">
+        <div style="font-size: 20px;height:30px;padding-left:36%;">
+          <p style="float:left;" >您的赠送次数还剩&nbsp;&nbsp;:&nbsp;&nbsp;</p>
+          <p id="restLicense" style="float:left;color: red;">{{restLicense}}</p>
+          <p style="float:left;">&nbsp;&nbsp;次</p>
+        </div>
+        <div style="font-size: 14px;margin-top:10px;color:lightblue;height:30px;">
+          您正在赠送课程 《{{order.itemName}}》
+        </div>
+      </div>
+      <p style="margin-left:10%;">可通过以下两种方式赠送好友</p>
+      <div class="methodSelect" style="height:150px;width:80%;margin-left:10%;border-top:1px solid lightgrey;">
+        <div class="method1" style="height:80px;padding-top:20px;">
+          <span style="float:left;margin-right:20px;margin-top:4px;font-size: 16px;">方法1</span>
+          <input style="width:35%;float:left;" id="searchContent1" type="text" class="form-control" placeholder="输入好友在LCPSP的注册邮箱"/>
+          <button style="float:left;margin-left: 30px;" data-toggle="modal" data-target="#addressList" id="searchBtn1" class="btn btn-success">确定</button>
+        </div>
+        <div class="method2" style="height:70px;">
+          <span style="float:left;margin-right:20px;margin-top:4px;font-size: 16px;">方法2</span>
+
+          <button style="float:left;width:25%;" data-toggle="modal" data-target="#addressList" class="btn btn-success">
+            从通讯录中选择好友
+          </button>
+        </div>
+      </div>
+      <p style="margin-left:10%;">您即将赠送以下好友</p>
+      <div class="methodSelect" style="height:200px;width:80%;margin-left:10%;border-top:1px solid lightgrey;">
+        <div class="personList" style="height:180px;overflow-y:auto; ">
+
+        </div>
+        <button class="btn btn-success" id="giveBtn" style="margin-left: 45%;margin-top: 20px;">赠送好友</button>
+        <div class="test" style="height:180px;">
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="addressList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+            <div class="modal-content" style="width:800px;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="float:left;" id="myModalLabel">通讯录</h4>
+                    <div style="margin-left:430px;float:left;width:350px;">
+                      <input class="form-control" placeholder="请输入用户邮箱或名称" id="searchContent2" style="float:left;width:250px;" type="text" name="filter"/>
+                      <button class="btn btn-success" id="searchBtn2" style="float:left;">搜索</button>
+                    </div>
+                </div>
+                <div class="modal-body addressListBody">
+
+                </div>
+                <div class="modal-footer" style="padding-top:40px;">
+                    <div class="Person" style="height:66px;width:60%;float:left;overflow-y:auto;margin-top:-35px;">
+                      <div style="float:left;width:20%;text-align: left;">已添加:&nbsp;&nbsp;</div>
+                      <div style="width:80%;float:left;" class="addedPerson">
+                      </div>
+                    </div>
+                    <div style="width:30%;float:right;" >
+                      <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" id="addConfirm">确定</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+  var order;
+  {{#if order}}
+    order = {{{jstringfiy order}}};
+  {{/if}}
+  var restLicense = {{{jstringfiy restLicense}}}
+</script>
+{{#section 'appcss'}}
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/course/giveCourse/bundle.css">
+{{/section}}
+
+{{#section 'appjs'}}
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/course/giveCourse/bundle.js"></script>
+<script>
+  $(".load a").mouseover(function(e) {
+    $(e.target).css("color","#00AA00");
+  });
+  $(".load a").mouseleave(function(e) {
+    $(e.target).css("color","black");
+  });
+</script>
+{{/section}}

@@ -1,0 +1,13 @@
+.padding {
+    padding-left: 0;
+}
+.floatleft {
+    float: left;
+}
+.htmlwidth {
+    width:100%;
+}
+.size{
+    width:140px;
+    height: 140px;
+}

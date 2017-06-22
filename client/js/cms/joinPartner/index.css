@@ -1,0 +1,39 @@
+#modalTab tr td{
+  height: 55px;
+}
+#modalTab tr td:first-child{
+  text-align: left;
+  width: 150px;
+  padding-left: 40px;
+}
+#modalTab tr td:nth-child(2){
+  text-align: left;
+  width: 400px;
+}
+#modalTab tr td:nth-child(2) input{
+  width: 300px;
+  height: 34px;
+}
+.clear{
+  clear: both;
+}
+.pinput{
+  width: 80%;
+  float: right;
+}
+.prow{
+  height: 20px;
+  line-height: 26px;
+  margin-bottom: 10%;
+}
+.ant-calendar-picker{
+  float: right;
+  width: 80%;
+}
+#cancel{
+  margin-right: 2%;
+}
+#confirm{
+  margin-left: 2%;
+  margin-right: 4%;
+}

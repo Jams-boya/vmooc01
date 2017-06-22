@@ -1,0 +1,15 @@
+#filePicker {
+  height: 30px;
+}
+.webuploader-pick {
+  height: 100%;
+  width: 120px;
+  background: #0099CC;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#filePicker input {
+  display: none;
+}

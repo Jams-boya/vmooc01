@@ -1,0 +1,55 @@
+.awm {
+  width: 100%;
+  font-family: 'Microsoft YaHei';
+}
+.clear {
+  clear: both;
+}
+.awmMenu span {
+  display: table;
+  float: left;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 20px 0px 20px 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+.awmMenu span .spanLine {
+  margin-top: 5px;
+  width: 100%;
+  height: 3px;
+}
+.awmMenu span:hover {
+  color: #34F72F!important;
+}
+.awmMenu span:hover .spanLine {
+  background: linear-gradient(to right, red , yellow , #27AE24)!important;
+  background: -moz-linear-gradient(to right, red , yellow , #27AE24)!important;
+  background: -ms-linear-gradient(to right, red , yellow , #27AE24)!important;
+  background: -o-linear-gradient(to right, red , yellow , #27AE24)!important;
+}
+.clickSpanLine {
+  background: linear-gradient(to right, red , yellow , #27AE24)!important;
+  background: -moz-linear-gradient(to right, red , yellow , #27AE24)!important;
+  background: -ms-linear-gradient(to right, red , yellow , #27AE24)!important;
+  background: -o-linear-gradient(to right, red , yellow , #27AE24)!important;
+}
+.expertId {
+  display: none;
+}
+.load a {
+  color: #000000;
+}
+.load a:hover {
+  text-decoration: none;
+  color: #27AE24;
+}
+.load a:link {
+  text-decoration: none;
+}
+.load span:nth-child(2) a {
+  color: #27AE24!important;
+}

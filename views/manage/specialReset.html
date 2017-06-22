@@ -1,0 +1,196 @@
+<div class="sprest">
+  <div class="sptitle">
+    新增专题
+  </div>
+  <div class="spcon">
+    <div class="spconall">
+      <div class="sphead">
+        <span class="headline"></span>
+        <span>专题基本信息</span>
+        <span class="headflag">*</span>
+        <div class="clear"></div>
+      </div>
+
+      <div class="sptbdiv">
+        <table class="sptb">
+          <tbody>
+            <tr>
+              <td>使用模板</td>
+              <td>
+                <div class="modelShow">
+                  <input name="modelSelect" checked="checked" value="./css/special.css" type="radio">
+                  <span>模板一</span>
+                  <br />
+                  <img src="/images/specialReset/www.jpg">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td id="midtd">专题名称</td>
+              <td>
+                <input class="spname" type="text" placeholder="填写专题名称" maxlength="15">
+                <span class="namelength">0/15</span>
+              </td>
+            </tr>
+            <tr>
+              <td>专题封面</td>
+              <td>
+                <div class="courseImg">
+                  <div class="imgDiv">
+                    <img src="/img/courseManage/sp1.png">
+                    <div class="imgbg"></div>
+                    <div class="selectImg">
+                      <img src="/img/courseManage/select.png">
+                    </div>
+                  </div>
+                  <div class="imgDiv">
+                    <img src="/img/courseManage/sp2.png">
+                    <div class="imgbg"></div>
+                    <div class="selectImg">
+                      <img src="/img/courseManage/select.png">
+                    </div>
+                  </div>
+                  <div class="imgDiv">
+                    <img src="/img/courseManage/sp3.png">
+                    <div class="imgbg"></div>
+                    <div class="selectImg">
+                      <img src="/img/courseManage/select.png">
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>专题页背景图</td>
+              <td>
+                <div class="spImg">
+                  <div class="spBgImg">
+                    <!--imgupload-->
+                  </div>
+                  <div class="tipdiv">
+                    <span class="tips">(建议尺寸：1920px * 360px，作为专题页上半部分背景图)</span>
+                    <!--<span class="imgEidtor"><a href="javascript: void(0)">编辑</a></span>-->
+                  </div>
+                  <div class="bgColordiv">
+                    <!--<span>背景色</span>
+                    <input class="bgColor" type="text">-->
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="spconall">
+      <div class="sphead">
+        <span class="headline"></span>
+        <span>专题课程合辑</span>
+        <span class="headflag">*</span>
+        <div class="clear"></div>
+      </div>
+      <div class="sptbdiv">
+        <table class="sptb partTB partList">
+        </table>
+      </div>
+    </div>
+
+    <div class="spconall">
+      <div class="sphead">
+        <span class="headline"></span>
+        <span>讲师推荐</span>
+        <span class="headflag">*</span>
+        <div class="clear"></div>
+      </div>
+
+      <div class="sptbdiv">
+        <table class="sptb partTB recSpecial">
+        </table>
+      </div>
+    </div>
+    <div class="spconall">
+      <div class="sphead">
+        <span class="headline"></span>
+        <span>售卖价格</span>
+        <span class="headflag">*</span>
+        <div class="clear"></div>
+      </div>
+
+      <div class="sptbdiv">
+        <table class="sptb partTB">
+          <tbody>
+            <tr>
+              <td>合辑原价</td>
+              <td><span class="totalPrice">0元</span></td>
+            </tr>
+            <tr>
+              <td>打包价格</td>
+              <td>
+                <input class="price" type="text">&nbsp;元&nbsp;&nbsp;人/年
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sprFoot">
+    <ul class="footul">
+      <li>
+        <span class="release">确定</span>
+      </li>
+      <li>
+        <a class="draft" href="javascript: void(0)">保存为草稿</a>
+      </li>
+      <li>
+        <a class="look" href="javascript: void(0)">预览</a>
+      </li>
+      <div class="clear"></div>
+    </ul>
+  </div>
+
+  <div class="addCourseBG"></div>
+  <div class="addCourseBox">
+    <span class="partNum" style="display: none;"></span>
+    <div class="courseHead">
+      <span>添加课程</span>
+      <img class="addclose" src="/images/specialReset/close.png">
+      <div class="clear"></div>
+    </div>
+
+    <div class="courSel">
+      <select class="courList">
+        <option value="所有分类">所有分类</option>
+      </select>
+      <input class="selBtn" type="button" value="搜索">
+      <input class="keyVal" type="text" placeholder="关键字搜索">
+      <!--<br />
+      <br />
+      <a class="recAll reca" href="javascript: void(0)">全部(0)</a>
+      <a class="recNow reca" href="javascript: void(0)">已推荐(0)</a>-->
+    </div>
+
+    <div class="courselist"></div>
+  </div>
+
+  <div class="addRecomBox">
+    <div class="courseHead">
+      <span>推荐讲师</span>
+      <img class="addReclose" src="/images/specialReset/close.png">
+      <div class="clear"></div>
+    </div>
+    <div class="courSel">
+      <input class="recBtn" type="button" value="搜索">
+      <input class="recKey" type="text" placeholder="关键字搜索">
+      <div class="clear"></div>
+    </div>
+    <div class="recomlist"></div>
+  </div>
+</div>
+{{#section 'appcss'}}
+<link rel="stylesheet" href="/manage/specialReset/bundle.css"> {{/section}} 
+{{#section 'appjs'}}
+<script src="/manage/specialReset/bundle.js"></script> {{/section}}

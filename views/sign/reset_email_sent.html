@@ -1,0 +1,20 @@
+<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css">
+<div id='email_sent' class="form-signin" style="max-width:54%">
+	<h2 class="form-signin-heading"><i class="fa fa-check-circle-o" style="font-size: 18px"></i>邮件发送成功</h2>
+	<div class="form-group">
+        <div class="input-icon right">
+        	<p>我们已经向 {{email}} 发送了一封邮件。点击邮件中的链接以重置你的密码。</p>
+
+        	<p>如果没有看到该邮件，请查看邮箱其他的可能位置，如垃圾箱、垃圾邮件过滤器、社会邮件或其他文件夹。</p>
+
+        	<p >
+	        	<a href="#" style="font-size:14px;color:grey;text-decoration: underline" id="resent_email" data-email="{{email}}">我没有收到该邮件</a>
+        	</p>
+        </div>
+    </div>
+</div>
+	
+{{#section 'appjs'}}
+    <script src="/script/sign/lostpassword.js"></script>
+
+{{/section}}

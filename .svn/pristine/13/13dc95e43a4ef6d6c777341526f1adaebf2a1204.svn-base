@@ -1,0 +1,11 @@
+.gopage {
+	width:30px !important;
+}
+
+.pagination {
+	margin-top: :35px !important;
+}
+
+.Person::-webkit-scrollbar { 
+  width: 3px;
+}

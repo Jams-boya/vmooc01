@@ -1,0 +1,80 @@
+<div class="prodet">
+	<div class="probanner">
+		<img src="../img/prodet-banner.png">
+	</div>
+
+	<div class="protec container">
+		<div class="userId" style="display: none;">{{expertInfo.userId}}</div>
+		<div class="tecimg">
+			<img src="{{config.avatorUrl}}/uploadpic/{{expertInfo.avatar}}" style="height:100%"/>
+		</div>
+
+		<div class="teccon">
+			<div class="tec">
+				<span>{{expertInfo.name}}</span>
+			</div>
+
+			<div class="tec">
+				{{expertInfo.professionalTitle}}
+			</div>
+
+			<div class="tec introCon">
+				{{expertInfo.briefDescription}}
+			</div>
+			<div class="tec">
+				<div class="triangle"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="prodetcon container">
+		<div class="proleft">
+			<div class="promenu">
+				<span>
+					他的回答（<span id="answerCount">{{expertInfo.count}}</span>）
+				<div class="menuline"></div>
+				</span>
+				<span>
+					课程（{{expertInfo.ownCount}}）
+					<div class="menuline"></div>
+				</span>
+			</div>
+
+			<div class="project">
+				<div class="reply"></div>
+
+				<div class="queload">
+					<a class="loadMore" href="javascript: void(0);">
+						加载更多
+						<div class="jt"></div>
+					</a>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="vlistdiv"></div>
+			</div>
+
+		</div>
+		<div class="proright">
+			<div class="rightBuy">
+				<img src="/images/buy.png">
+				<div class="buyMy">
+					购买Ta的课程<br />
+					就可以{{expertInfo.money}}元向Ta提问啦！
+				</div>
+				<div class="buyBtn">购买课程</div>
+			</div>
+			<div class="lookCount">个人主页被&nbsp;<span>{{expertInfo.viewedCount}}</span>&nbsp;人浏览</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+{{#section 'appjs'}}
+<script src="/expert/expert/bundle.js"></script>
+{{/section}}
+
+{{#section 'appcss'}}
+<link rel="stylesheet" href="/expert/expert/bundle.css">
+{{/section}}

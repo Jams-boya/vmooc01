@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="load">
+    <span><a href="/messageCenter?type=course" style="color:black">消息中心</a></span>&nbsp;>&nbsp;
+    <span id="breadInfo" style="color:#00AA00;font-size: 12px;"></span>
+
+  </div>
+  <div class="pubmenu" style="float:left;width:13%;">
+    <!-- nav -->
+  </div>
+  <div class="con" style="margin-top:20px;">
+    <div class="contitle">
+      <span class="refer">系统通知</span>
+      <div class="navigation">
+        <div style="float:right;">
+        <div style="clear: none;"></div>
+      </div>
+      </div>
+      <div style="clear: none;margin-bottom: 10px;"></div>
+    </div>
+    <div class="conbody" style=" width:85%;float:right;height:545px;border:1px solid #E0E1E1;margin-bottom: 30px;">
+      <div class="tableContainer"  style="height:545px;">
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+<script>
+  $(".platform").hide();
+  $(".change").hide();
+  var type = '{{type}}';
+  var info = type == "course" ? "课程消息" : type == "qa" ? "问答消息" : type == "system" ? "系统消息" : "";
+  $("#breadInfo").append(info);
+  $(".load a").mouseover(function(e) {
+    $(e.target).css("color","#00AA00");
+  });
+  $(".load a").mouseleave(function(e) {
+    $(e.target).css("color","black");
+  });
+</script>
+{{#section 'appjs'}}
+<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/messageCenter/messageCenter/bundle.js"></script>
+{{/section}}
+{{#section 'appcss'}}
+<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/expert/expertPublish/bundle.css">
+{{/section}}

@@ -1,0 +1,23 @@
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="aplus-rate-ahot" content="0.5">
+    <meta name="aplus-rate-ahot-res" content="0.5">
+    <meta name="data-spm" content="5176">
+
+    <title>{{title}}</title> 
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/layouts/public_layout/bundle.css">
+    {{{_sections.appcss}}}
+  </head>
+
+  <body>
+    {{{body}}}
+    <script src="//cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script>
+    <script src="/layouts/public_layout/bundle.js"></script>
+    {{{_sections.appjs}}}
+    {{{_sections.globlecontent}}}
+  </body>
+</html>

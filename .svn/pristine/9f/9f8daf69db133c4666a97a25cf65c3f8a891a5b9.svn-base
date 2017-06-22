@@ -1,0 +1,75 @@
+<div class="cmcon" style="width:100%">
+  <div class="cmhead">
+    <span>课程管理</span>
+    <div class="shbtn">搜索</div>
+    <input class="search" type="text" placeholder="可输入课程名称、讲师名称进行搜索">
+    <div class="clear"></div>
+  </div>
+
+  <div class="cmshow">
+    <div class="sehead">
+      <span>课程类型</span>
+      <select class="courseType">
+        <option value="全部">全部</option>
+      </select>
+      <span>课程方向</span>
+      <select class="direction">
+        <option value="全部">全部</option>
+      </select>
+      <span>课程状态</span>
+      <select class="courseState">
+        <option value="全部">全部</option>
+        <option value="0">建设中</option>
+        <option value="1">售卖中</option>
+        <option value="2">违规下架</option>
+        <option value="3">违规待审核</option>
+      </select>
+      <span>课程来源</span>
+
+      <select class="domain">
+        <option value="全部">全部</option>
+        {{#each domains}}
+          <option value={{domain}}>{{domain}}</option>
+        {{/each}}
+      </select>
+      <div class="clear"></div>
+    </div>
+
+    <div class="sehead">
+      <span>上传时间</span>
+      <div class="start timediv"></div>
+      <span class="timespan">
+        &nbsp;&nbsp;
+        <div class="line"></div>
+      </span>
+      <div class="end timediv"></div>
+
+      <div class="selbtn">筛选</div>
+
+      <div class="clear"></div>
+    </div>
+
+    <div class="courseList">
+      <!--course-->
+    </div>
+  </div>
+
+  <div class="messagebox">
+    <div class="message">
+      <div class="messtitle">
+        <span>违规下架</span>
+        <span class="courseId" style="display: none;"></span>
+      </div>
+      <textarea class="soldOutCon" placeholder="请填写下架理由"></textarea>
+      <div class="closeMs soldOutBtn">取消</div>
+      <div class="soldOut soldOutBtn">确定</div>
+    </div>
+  </div>
+</div>
+<script>
+  var domains = {{{jstringfiy domains}}};
+</script>
+{{#section 'appcss'}}
+<link rel="stylesheet" href="/manage/courseManage/bundle.css"> {{/section}} {{#section 'appjs'}}
+<script src="/manage/courseManage/bundle.js"></script>
+{{/section}}
